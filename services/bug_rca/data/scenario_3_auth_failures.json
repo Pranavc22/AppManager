@@ -1,0 +1,626 @@
+[
+  {
+    "timestamp": "2024-01-15T08:30:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_2001",
+    "request_id": "req_a1b2c3d4",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T08:35:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_2002",
+    "request_id": "req_a1b2c3d5",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T08:40:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_2003",
+    "request_id": "req_a1b2c3d6",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T08:45:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_2004",
+    "request_id": "req_a1b2c3d7",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T08:50:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_3828",
+    "request_id": "req_5f091",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:03:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_7838",
+    "request_id": "req_4fcd1",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:11:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_6113",
+    "request_id": "req_b5725",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:25:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_8317",
+    "request_id": "req_d5e38",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:38:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_2083",
+    "request_id": "req_dffd9",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:45:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_2318",
+    "request_id": "req_5d3c9",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:59:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_9989",
+    "request_id": "req_44270",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:07:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_5086",
+    "request_id": "req_46d46",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:15:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_1385",
+    "request_id": "req_33165",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:29:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_7552",
+    "request_id": "req_a9d4a",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:39:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_3127",
+    "request_id": "req_660f3",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:49:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_9057",
+    "request_id": "req_70108",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:55:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_1626",
+    "request_id": "req_a82a6",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:01:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_8150",
+    "request_id": "req_7bf4d",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:02:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_3568",
+    "request_id": "req_3be7d",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:15:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_9924",
+    "request_id": "req_60d82",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:21:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_2790",
+    "request_id": "req_c0e26",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:32:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_5664",
+    "request_id": "req_a0e99",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:33:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_9537",
+    "request_id": "req_62e8d",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:43:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_6533",
+    "request_id": "req_f1c7d",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:46:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_1731",
+    "request_id": "req_50a82",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:47:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_3579",
+    "request_id": "req_a87bc",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:54:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_8000",
+    "request_id": "req_b7002",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:07:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_2487",
+    "request_id": "req_3c77e",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:15:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_9844",
+    "request_id": "req_e57e9",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:25:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_1927",
+    "request_id": "req_8eb7d",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:31:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_6057",
+    "request_id": "req_92cb7",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:39:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_5981",
+    "request_id": "req_bd4f7",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:54:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_6964",
+    "request_id": "req_b1b64",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:03:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_5126",
+    "request_id": "req_6a9af",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:10:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_3506",
+    "request_id": "req_a8977",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:21:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_9447",
+    "request_id": "req_5c122",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:27:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_7337",
+    "request_id": "req_e8ea4",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:32:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_5385",
+    "request_id": "req_42cce",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:33:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_1169",
+    "request_id": "req_af844",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:34:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_6459",
+    "request_id": "req_bf86a",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:38:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_5412",
+    "request_id": "req_bd104",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:42:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_6409",
+    "request_id": "req_1cce8",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:50:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_4165",
+    "request_id": "req_3de69",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:54:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_9878",
+    "request_id": "req_72d89",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:03:00Z",
+    "service_name": "auth-service",
+    "error_message": "TokenExpiredException: JWT token has expired",
+    "environment": "production",
+    "user_id": "user_6017",
+    "request_id": "req_d632a",
+    "metadata": {
+      "token_expiry": "2024-01-14T08:35:00Z",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:12:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_2321",
+    "request_id": "req_1aa13",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:23:00Z",
+    "service_name": "api-gateway",
+    "error_message": "UnauthorizedException: invalid credentials",
+    "environment": "production",
+    "user_id": "user_5141",
+    "request_id": "req_6d0ab",
+    "metadata": {
+      "auth_type": "bearer_token",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:33:00Z",
+    "service_name": "auth-service",
+    "error_message": "Invalid JWT token signature",
+    "stack_trace": "at com.example.auth.JWTValidator.verify(JWTValidator.java:112)\nat com.example.auth.AuthService.validateToken(AuthService.java:67)",
+    "environment": "production",
+    "user_id": "user_7255",
+    "request_id": "req_c0d33",
+    "metadata": {
+      "token_age_hours": 24,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:34:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_1540",
+    "request_id": "req_40e0e",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:45:00Z",
+    "service_name": "user-service",
+    "error_message": "Access denied: insufficient permissions",
+    "environment": "production",
+    "user_id": "user_3694",
+    "request_id": "req_778b7",
+    "metadata": {
+      "required_role": "admin",
+      "user_role": "user",
+      "region": "us-east-1"
+    }
+  }
+]

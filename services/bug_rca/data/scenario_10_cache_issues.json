@@ -1,0 +1,619 @@
+[
+  {
+    "timestamp": "2024-01-15T15:30:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_c1a2c3h4",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:31:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_c1a2c3h5",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:32:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_6001",
+    "request_id": "req_c1a2c3h6",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:42:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_3008",
+    "request_id": "req_d1ddd",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:54:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_77ff4",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:08:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_5fc3e",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:16:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_8366",
+    "request_id": "req_c2194",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:22:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_654d8",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:24:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_ce329",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:34:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_28dfa",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:35:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_79a8e",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:46:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_807f9",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:54:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_1336",
+    "request_id": "req_c7708",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:07:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_e1c96",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:12:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_7571",
+    "request_id": "req_84946",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:18:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_8921d",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:22:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_af453",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:26:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_32509",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:39:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_b5808",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:46:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_1c59e",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:53:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_2864",
+    "request_id": "req_ad974",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:56:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_3e001",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:01:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_6480",
+    "request_id": "req_d7b6d",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:14:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_2097a",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:21:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_9928",
+    "request_id": "req_7beb4",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:31:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_1217",
+    "request_id": "req_dc8b4",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:35:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_5002",
+    "request_id": "req_ea327",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:42:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_41832",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:52:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_1f357",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:59:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_1cf3f",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:03:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_3374",
+    "request_id": "req_b83f3",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:05:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_584dc",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:15:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_ad5a6",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:30:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_ba3fc",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:44:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_599bc",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:50:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_94486",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:03:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_6407",
+    "request_id": "req_7633c",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:14:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_8968",
+    "request_id": "req_2bd19",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:22:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_7863",
+    "request_id": "req_93f6f",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:34:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_5bded",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:43:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_c6b0b",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:49:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_da435",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:51:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_955ab",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:54:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_6043",
+    "request_id": "req_4a168",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:09:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_eb936",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:24:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_215c5",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:25:00Z",
+    "service_name": "cache-service",
+    "error_message": "CacheException: Redis connection lost",
+    "environment": "production",
+    "request_id": "req_e5150",
+    "metadata": {
+      "redis_instance": "redis-1.prod.internal",
+      "retry_count": 5,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:28:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_3790",
+    "request_id": "req_4e4dc",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:33:00Z",
+    "service_name": "api-gateway",
+    "error_message": "CacheMissException: unable to retrieve cached data",
+    "environment": "production",
+    "request_id": "req_b43e9",
+    "metadata": {
+      "cache_key": "user_profile_1001",
+      "fallback_used": true,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:46:00Z",
+    "service_name": "session-service",
+    "error_message": "SessionExpiredException: session has expired",
+    "environment": "production",
+    "user_id": "user_3268",
+    "request_id": "req_8d332",
+    "metadata": {
+      "session_age_minutes": 120,
+      "timeout_minutes": 60,
+      "region": "us-east-1"
+    }
+  }
+]

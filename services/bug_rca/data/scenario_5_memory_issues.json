@@ -1,0 +1,630 @@
+[
+  {
+    "timestamp": "2024-01-15T16:00:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_m1e2m3o4",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-6"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:01:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_m1e2m3o5",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-6"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:02:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_m1e2m3o6",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:06:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_73523",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:10:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_836b7",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-16"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:12:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_58503",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:17:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_738c2",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-11"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:31:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_9f93d",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:46:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_dd584",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-20"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:53:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_1f5a1",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:04:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_9cde6",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-9"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:13:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_3d756",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-9"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:18:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_33161",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:29:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_db019",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-18"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:32:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_58e6b",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:44:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_8404a",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:56:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_3ed25",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:57:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_e1038",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-18"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:08:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_c63b3",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-3"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:12:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_7030b",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-6"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:15:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_dd7a8",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-6"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:21:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_bb243",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:36:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_3c033",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:44:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_3fb02",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-13"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:45:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_9c85a",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:49:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_cc0fa",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:53:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_69c80",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:06:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_d9a07",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-17"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:10:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_a3bae",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-14"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:20:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_8dc2b",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-9"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:34:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_19d04",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-5"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:49:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_9c505",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-18"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:03:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_8ee56",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:15:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_2e313",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-11"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:25:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_cd42b",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-15"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:40:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_a462b",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T20:55:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_40cf6",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-13"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:10:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_ea146",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-3"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:25:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_3e9c2",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:40:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_94ace",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-8"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:45:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_f2e46",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-11"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:51:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_cba5b",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-11"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T21:54:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_6fddd",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T22:07:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_27ad3",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-9"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T22:14:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_45c4a",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-3"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T22:21:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_6c500",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-2"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T22:25:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_87361",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-13"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T22:34:00Z",
+    "service_name": "api-gateway",
+    "error_message": "OutOfMemoryError: Java heap space",
+    "stack_trace": "java.lang.OutOfMemoryError: Java heap space\nat java.util.Arrays.copyOf(Arrays.java:3275)\nat java.util.ArrayList.grow(ArrayList.java:267)",
+    "environment": "production",
+    "request_id": "req_daaa0",
+    "metadata": {
+      "heap_max_mb": 2048,
+      "heap_used_mb": 2050,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T22:37:00Z",
+    "service_name": "api-gateway",
+    "error_message": "GCOverheadLimitExceeded: time spent in garbage collection",
+    "environment": "production",
+    "request_id": "req_d6fbf",
+    "metadata": {
+      "gc_time_percent": 98,
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T22:52:00Z",
+    "service_name": "worker-service",
+    "error_message": "MemoryError: unable to allocate 512 MB for cache",
+    "environment": "production",
+    "request_id": "req_1e26f",
+    "metadata": {
+      "requested_mb": 512,
+      "available_mb": 256,
+      "region": "us-east-1"
+    }
+  }
+]

@@ -1,0 +1,624 @@
+[
+  {
+    "timestamp": "2024-01-15T09:00:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_3001",
+    "request_id": "req_r1a2t3e4",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:05:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_r1a2t3e5",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:12:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_78887",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:21:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_e3849",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:31:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_dffc6",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:43:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_6a2ab",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T09:54:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_a7817",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:04:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_c69b6",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:10:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_c0765",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:18:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_3627",
+    "request_id": "req_35622",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:30:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_9612",
+    "request_id": "req_4ed59",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:31:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_8012",
+    "request_id": "req_caa5f",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:38:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_4913",
+    "request_id": "req_c8ea1",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:53:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_b978f",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:00:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_50385",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:07:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_6172",
+    "request_id": "req_d99f9",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:11:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_57259",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:21:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_9df3d",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:36:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_3e84c",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:46:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_3669",
+    "request_id": "req_3d44c",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:47:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_68cc5",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:53:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_1ed3e",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:05:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_8ea6f",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:18:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_23b36",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:31:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_ef780",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:34:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_b5f9b",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:47:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_2349",
+    "request_id": "req_a465b",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:59:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_c83f6",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:04:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_1443",
+    "request_id": "req_93127",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:10:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_3167",
+    "request_id": "req_b9f71",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:12:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_65d06",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:15:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_b8b91",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:17:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_4352",
+    "request_id": "req_ba5f9",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:23:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_9559c",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:37:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_51c6d",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:40:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_2400",
+    "request_id": "req_c1e61",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:48:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_c37ee",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:50:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_2058",
+    "request_id": "req_29d81",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:56:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_6978",
+    "request_id": "req_a4f1d",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:57:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_9977",
+    "request_id": "req_34133",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:06:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_8299",
+    "request_id": "req_5c67f",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:09:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_6448",
+    "request_id": "req_a7705",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:12:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_5273e",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:18:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_9907",
+    "request_id": "req_5e2c3",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:24:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_c0fa6",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:29:00Z",
+    "service_name": "api-gateway",
+    "error_message": "TooManyRequests: API rate limit exceeded",
+    "environment": "production",
+    "request_id": "req_cbd7e",
+    "metadata": {
+      "global_rps": 5050,
+      "limit_rps": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:44:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_8494",
+    "request_id": "req_58e6e",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:45:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_5321",
+    "request_id": "req_378a6",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:46:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_3965",
+    "request_id": "req_a20b3",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:56:00Z",
+    "service_name": "payment-service",
+    "error_message": "RateLimitExceeded: 1000 requests/minute limit reached",
+    "environment": "production",
+    "user_id": "user_3999",
+    "request_id": "req_85c95",
+    "metadata": {
+      "user_requests_per_minute": 1050,
+      "limit": 1000,
+      "region": "us-east-1"
+    }
+  }
+]

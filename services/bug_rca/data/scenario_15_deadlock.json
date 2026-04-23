@@ -1,0 +1,702 @@
+[
+  {
+    "timestamp": "2024-01-15T10:00:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_1001",
+    "request_id": "req_f8a1b2c3",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:05:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_1002",
+    "request_id": "req_f8a1b2c4",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-2",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:10:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_1003",
+    "request_id": "req_f8a1b2c5",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-3",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:12:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_2352",
+    "request_id": "req_6b6f0",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:21:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_1656",
+    "request_id": "req_ae0ae",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-18",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:26:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_3319",
+    "request_id": "req_281c5",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-2",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:31:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_1619",
+    "request_id": "req_60441",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-13",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:41:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_9398",
+    "request_id": "req_972e4",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-10",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:50:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_9373",
+    "request_id": "req_249b4",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-17",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:01:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_9135",
+    "request_id": "req_a1141",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-17",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:09:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_5557",
+    "request_id": "req_c1485",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:19:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_7672",
+    "request_id": "req_42a7b",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:24:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_7629",
+    "request_id": "req_75489",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-5",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:39:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_4491",
+    "request_id": "req_c943e",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:43:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_3724",
+    "request_id": "req_c6dec",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:56:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_2192",
+    "request_id": "req_886f6",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-20",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:57:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_1017",
+    "request_id": "req_d5133",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-14",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:59:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_2058",
+    "request_id": "req_e9b95",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-10",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:04:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_6602",
+    "request_id": "req_b3be4",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-16",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:12:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_1562",
+    "request_id": "req_4a5b4",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:13:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_1389",
+    "request_id": "req_5d48e",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-7",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:18:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_8908",
+    "request_id": "req_52cc4",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-13",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:32:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_5891",
+    "request_id": "req_932b6",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-8",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:40:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_8438",
+    "request_id": "req_25840",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-18",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:48:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_9080",
+    "request_id": "req_9dd1f",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-10",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:57:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_9205",
+    "request_id": "req_e201d",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-10",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:07:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_5869",
+    "request_id": "req_57598",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-7",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:09:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_1095",
+    "request_id": "req_56c83",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:24:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_9078",
+    "request_id": "req_95172",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-16",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:37:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_8447",
+    "request_id": "req_e44a5",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:38:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_5087",
+    "request_id": "req_2fd6d",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-10",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:41:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_1699",
+    "request_id": "req_2a298",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-14",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:48:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_6535",
+    "request_id": "req_35524",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-8",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:54:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_8441",
+    "request_id": "req_4e27c",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-12",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:03:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_6999",
+    "request_id": "req_ddec2",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:18:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_5529",
+    "request_id": "req_36df5",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-13",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:29:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_9057",
+    "request_id": "req_322b4",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-8",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:32:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_2169",
+    "request_id": "req_de2b0",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-3",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:38:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_9891",
+    "request_id": "req_979a2",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-7",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:53:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_1198",
+    "request_id": "req_800c8",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-17",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:08:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_3327",
+    "request_id": "req_b067d",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:17:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_8508",
+    "request_id": "req_1acf6",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-5",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:18:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_4731",
+    "request_id": "req_65ce1",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:33:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_9526",
+    "request_id": "req_4af7c",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-12",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:42:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_7941",
+    "request_id": "req_3ebae",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-9",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:48:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)\nat com.example.middleware.AuthMiddleware.process(AuthMiddleware.java:23)",
+    "environment": "production",
+    "user_id": "user_3690",
+    "request_id": "req_8cbb8",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-1",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:52:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_5742",
+    "request_id": "req_8abd5",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-4",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:07:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_9042",
+    "request_id": "req_df905",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-8",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:16:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_9900",
+    "request_id": "req_5e991",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-19",
+      "attempt": 1
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:31:00Z",
+    "service_name": "api-gateway",
+    "error_message": "15 Deadlock Error",
+    "stack_trace": "at com.example.validation.RequestValidator.validate(RequestValidator.java:45)",
+    "environment": "production",
+    "user_id": "user_5382",
+    "request_id": "req_490fa",
+    "metadata": {
+      "region": "us-east-1",
+      "pod_id": "pod-api-gateway-6",
+      "attempt": 1
+    }
+  }
+]
