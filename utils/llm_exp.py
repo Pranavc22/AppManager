@@ -1,4 +1,4 @@
-from llm import get_llm_client
+from utils.llm import get_llm_client
 
 def main():
     client = get_llm_client()

@@ -3,3 +3,4 @@ uvicorn[standard]==0.24.0
 pandas==3.0.2
 requests==2.33.1
 openrouter==0.9.1
+SQLAlchemy==2.0.49
