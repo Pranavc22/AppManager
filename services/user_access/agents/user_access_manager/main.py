@@ -1,27 +1,23 @@
-from sqlalchemy import text
+from utils.llm import get_llm_client
+from services.user_access.agents.user_access_manager.prompt import *
 
-from database import engine
+class SummaryAgent:
+    def __init__(self):
+        self.client = get_llm_client()
 
-def get_access_requests_by_status(status: str):
-    query = text("""
-        SELECT 
-            ar.request_id,
-            ar.user_id,
-            u.name AS user_name,
-            ar.resource_id,
-            r.resource_name,
-            ar.requested_action,
-            ar.status,
-            ar.created_at
-        FROM access_requests ar
-        JOIN users u ON ar.user_id = u.user_id
-        JOIN resources r ON ar.resource_id = r.resource_id
-        WHERE LOWER(ar.status) = LOWER(:status)
-        ORDER BY ar.created_at DESC
-    """)
+    def generate_summary(self, context: dict) -> str:
+        system_prompt = SYSTEM
 
-    with engine.connect() as conn:
-        result = conn.execute(query, {"status": status})
-        rows = result.fetchall()
+        user_prompt = f"""
+        Generate a summary for the following request:
 
-    return [dict(row._mapping) for row in rows]
+        {context}
+        """         
+
+        response = self.client.chat(
+            system=system_prompt,
+            user=user_prompt,
+            max_tokens=200
+        )
+
+        return response.strip()

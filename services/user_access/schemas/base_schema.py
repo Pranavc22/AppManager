@@ -27,3 +27,41 @@ class AccessRequestItem(BaseModel):
 class AccessRequestListResponse(BaseModel):
     count: int
     data: List[AccessRequestItem]
+
+class Summary(BaseModel):
+    text: str
+
+class CurrentRole(BaseModel):
+    role: str
+    scope: str
+
+class MissingRole(BaseModel):
+    role: str
+    scope: str
+    reason: str
+
+class Impact(BaseModel):
+    risk_level: str
+    description: str
+
+class Recommendation(BaseModel):
+    decision: str
+    confidence: str
+    reason: str
+
+class History(BaseModel):
+    approved_request_ids: List[str]
+    rejected_request_ids: List[str]
+
+class AnalyzeResponse(BaseModel):
+    request_id: str
+
+    summary: Summary
+
+    current_roles: List[CurrentRole]
+    missing_roles: List[MissingRole]
+
+    impact: Impact
+    recommendation: Recommendation
+
+    history: History
