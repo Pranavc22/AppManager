@@ -1,3 +1,6 @@
+import uuid
+
+from datetime import datetime
 from sqlalchemy import text
 
 from database import engine
@@ -139,3 +142,93 @@ def get_historical_requests(action: str, resource_type: str, scope_id: str, requ
         "approved_request_ids": approved,
         "rejected_request_ids": rejected
     }
+
+def get_user_id_from_request(request_id: str):
+    query = text("""
+        SELECT user_id FROM access_requests
+        WHERE request_id = :request_id
+    """)
+
+    with engine.connect() as conn:
+        result = conn.execute(query, {"request_id": request_id}).fetchone()
+
+    return result.user_id if result else None
+
+def update_request_status(request_id: str, status: str):
+    query = text("""
+        UPDATE access_requests
+        SET status = :status
+        WHERE request_id = :request_id
+    """)
+
+    with engine.begin() as conn:
+        conn.execute(query, {
+            "status": status,
+            "request_id": request_id
+        })
+
+def insert_access_decision(request_id: str, approver_id: str, decision: str, comments: str | None):
+    query = text("""
+        INSERT INTO access_decisions (
+            decision_id,
+            request_id,
+            approver_id,
+            decision,
+            comments,
+            decided_at
+        )
+        VALUES (
+            :decision_id,
+            :request_id,
+            :approver_id,
+            :decision,
+            :comments,
+            :decided_at
+        )
+    """)
+
+    with engine.begin() as conn:
+        conn.execute(query, {
+            "decision_id": str(uuid.uuid4()),
+            "request_id": request_id,
+            "approver_id": approver_id,
+            "decision": decision,
+            "comments": comments,
+            "decided_at": datetime.utcnow()
+        })
+
+def assign_roles(user_id: str, roles: list):
+    query = text("""
+        INSERT INTO user_roles (
+            user_id,
+            role_id,
+            scope_type,
+            scope_id,
+            granted_at
+        )
+        VALUES (
+            :user_id,
+            :role_id,
+            'study',
+            :scope_id,
+            :granted_at
+        )
+    """)
+
+    with engine.begin() as conn:
+        for role in roles:
+            # resolve role_id from role_name
+            role_lookup = conn.execute(
+                text("SELECT role_id FROM roles WHERE role_name = :role_name"),
+                {"role_name": role["role"]}
+            ).fetchone()
+
+            if not role_lookup:
+                continue
+
+            conn.execute(query, {
+                "user_id": user_id,
+                "role_id": role_lookup.role_id,
+                "scope_id": role["scope"],
+                "granted_at": datetime.utcnow()
+            })

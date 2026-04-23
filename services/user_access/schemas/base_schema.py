@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field, field_validator
 from typing import List
 
 class AccessRequestFilter(BaseModel):
-    status: str = Field(..., description="Status of request: PENDING, APPROVED, REJECTED")
+    status: str
 
     @field_validator("status")
     def validate_status(cls, value):
@@ -28,17 +28,23 @@ class AccessRequestListResponse(BaseModel):
     count: int
     data: List[AccessRequestItem]
 
-class Summary(BaseModel):
-    text: str
+class AnalyzeRequest(BaseModel):
+    req_id: str
+    status: str
+
+    @field_validator("status")
+    def validate_status(cls, value):
+        allowed = {"PENDING", "APPROVED", "REJECTED"}
+        value = value.upper()
+
+        if value not in allowed:
+            raise ValueError(f"Status must be one of {allowed}")
+
+        return value
 
 class CurrentRole(BaseModel):
     role: str
     scope: str
-
-class MissingRole(BaseModel):
-    role: str
-    scope: str
-    reason: str
 
 class Impact(BaseModel):
     risk_level: str
@@ -56,12 +62,23 @@ class History(BaseModel):
 class AnalyzeResponse(BaseModel):
     request_id: str
 
-    summary: Summary
+    summary: str
 
     current_roles: List[CurrentRole]
-    missing_roles: List[MissingRole]
+    candidate_roles: List[str]
 
     impact: Impact
     recommendation: Recommendation
 
     history: History
+
+class RoleAssignment(BaseModel):
+    role: str
+    scope: str
+
+class DecisionRequest(BaseModel):
+    decision: str  # APPROVE | REJECT
+    roles_to_assign: List[RoleAssignment] = []
+    comments: str | None = None
+    approver_id: str
+    
