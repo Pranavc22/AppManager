@@ -1,3 +1,12 @@
+# AppManager
+
+A system that helps manage applications.
+
+## Repository Structure
+
+*This is a WIP and will be updated.*
+
+```
 .
 ├── LICENSE
 ├── README.md
@@ -76,3 +85,4 @@
 └── utils
     ├── llm.py
     └── llm_exp.py
+```
