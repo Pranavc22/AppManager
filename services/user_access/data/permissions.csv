@@ -1,0 +1,7 @@
+permission_id,action,resource_type
+P001,read,dataset
+P002,write,dataset
+P003,run,pipeline
+P004,read,report
+P005,approve,report
+P006,export,dataset

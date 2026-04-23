@@ -1,0 +1,11 @@
+resource_id,resource_name,resource_type,study_id,sensitivity,owner
+RES001,Oncology Patient Dataset,dataset,STUDY001,HIGH,Clinical Ops
+RES002,Diabetes Analysis Dataset,dataset,STUDY002,MEDIUM,Data Science
+RES003,Cardiology Results Dataset,dataset,STUDY003,LOW,Clinical Ops
+RES004,Neurology Biomarker Dataset,dataset,STUDY004,HIGH,Research
+RES005,Immunotherapy Trial Dataset,dataset,STUDY005,MEDIUM,Clinical Ops
+RES006,Oncology Pipeline,pipeline,STUDY001,MEDIUM,Data Engineering
+RES007,Diabetes Reporting Dashboard,report,STUDY002,LOW,BI Team
+RES008,Cardiology Submission Report,report,STUDY003,MEDIUM,Regulatory
+RES009,Neurology Analysis Pipeline,pipeline,STUDY004,HIGH,Data Engineering
+RES010,Immunotherapy Dashboard,report,STUDY005,LOW,BI Team

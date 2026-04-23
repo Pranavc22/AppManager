@@ -1,0 +1,6 @@
+study_id,study_name,therapeutic_area,status
+STUDY001,Phase III Oncology Trial,Oncology,ongoing
+STUDY002,Diabetes Drug Study,Endocrinology,ongoing
+STUDY003,Cardiology Outcomes Study,Cardiology,completed
+STUDY004,Neurology Biomarker Study,Neurology,ongoing
+STUDY005,Immunotherapy Research Study,Immunology,planning

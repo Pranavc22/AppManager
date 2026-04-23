@@ -1,0 +1,4 @@
+decision_id,request_id,approver_id,decision,comments,decided_at
+DEC001,REQ003,U004,APPROVED,Valid data update,2026-04-19T12:00:00Z
+DEC002,REQ005,U005,APPROVED,Meets regulatory requirements,2026-04-18T14:00:00Z
+DEC003,REQ007,U004,APPROVED,Export approved for reporting,2026-04-17T16:00:00Z

@@ -1,0 +1,8 @@
+role_id,role_name,description
+R001,Clinical Scientist,Access to clinical datasets and analysis
+R002,Biostatistician,Advanced statistical analysis permissions
+R003,Data Manager,Manage and curate datasets
+R004,QA Reviewer,Review and approve submissions
+R005,Regulatory Specialist,Finalize and submit reports
+R006,Platform Engineer,System-level access to pipelines
+R007,Data Privacy Officer,Access to highly sensitive patient data

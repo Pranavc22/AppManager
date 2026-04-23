@@ -1,0 +1,11 @@
+request_id,user_id,resource_id,requested_action,scope_type,scope_id,justification,status,created_at
+REQ001,U001,RES002,read,study,STUDY002,Need cross-study analysis,PENDING,2026-04-20T09:00:00Z
+REQ002,U002,RES001,read,study,STUDY001,Statistical modeling,PENDING,2026-04-20T10:00:00Z
+REQ003,U003,RES001,write,study,STUDY001,Data correction needed,APPROVED,2026-04-19T11:00:00Z
+REQ004,U004,RES008,approve,study,STUDY003,QA validation,PENDING,2026-04-21T12:00:00Z
+REQ005,U005,RES008,approve,study,STUDY003,Regulatory submission,APPROVED,2026-04-18T13:00:00Z
+REQ006,U007,RES004,read,study,STUDY004,Biomarker analysis,PENDING,2026-04-22T14:00:00Z
+REQ007,U008,RES003,export,study,STUDY003,Final report generation,APPROVED,2026-04-17T15:00:00Z
+REQ008,U009,RES001,read,study,STUDY001,Privacy audit,PENDING,2026-04-22T16:00:00Z
+REQ009,U010,RES002,read,study,STUDY002,External collaboration,PENDING,2026-04-23T08:00:00Z
+REQ010,U001,RES006,run,study,STUDY001,Pipeline execution,PENDING,2026-04-23T09:30:00Z

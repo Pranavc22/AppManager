@@ -1,0 +1,11 @@
+user_id,name,email,department,title,status
+U001,Dr. Alice Smith,alice.smith@pharma.com,Clinical,Clinical Scientist,active
+U002,Dr. Bob Lee,bob.lee@pharma.com,Biostatistics,Biostatistician,active
+U003,Carol Jones,carol.jones@pharma.com,Data Management,Data Manager,active
+U004,David Kim,david.kim@pharma.com,QA,QA Reviewer,active
+U005,Emma Brown,emma.brown@pharma.com,Regulatory,Regulatory Specialist,active
+U006,Frank Wilson,frank.wilson@pharma.com,IT,Platform Engineer,active
+U007,Grace Liu,grace.liu@pharma.com,Clinical,Clinical Scientist,active
+U008,Henry Patel,henry.patel@pharma.com,Biostatistics,Senior Biostatistician,active
+U009,Isha Verma,isha.verma@pharma.com,Data Privacy,Data Privacy Officer,active
+U010,John Carter,john.carter@pharma.com,External,External Collaborator,active
