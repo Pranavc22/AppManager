@@ -1,0 +1,586 @@
+[
+  {
+    "timestamp": "2024-01-15T14:00:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_d1e2f3g4",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:02:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_d1e2f3g5",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:04:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_d1e2f3g6",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:06:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_d1e2f3g7",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:20:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_55935",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:24:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_1e41f",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:33:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_5bc5c",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:39:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_77948",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:41:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_c85e7",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:51:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_68c94",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:56:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_a7f3f",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:57:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_ef85e",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:01:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_9b557",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:11:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_5f380",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:21:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_7833d",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:30:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_2cdca",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:35:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_74a8a",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:36:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_5201a",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:51:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_416d7",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:55:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_79dd7",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:02:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_c801b",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:11:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_7873f",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:13:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_8f3fc",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:19:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_6b4f7",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:21:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_310d4",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:31:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_36399",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:46:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_a9b37",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:48:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_dca31",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:52:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_b8841",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:55:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_30398",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:09:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_cafea",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:23:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_473e4",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:25:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_285f3",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:34:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_ef34b",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:49:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_ab8ec",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:59:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_ddd82",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:01:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_f0850",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:12:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_ad2e1",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:21:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_69fe0",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:24:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_c7821",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:39:00Z",
+    "service_name": "notification-service",
+    "error_message": "DatabaseConnectionError: failed to connect to user-service",
+    "environment": "production",
+    "request_id": "req_75056",
+    "metadata": {
+      "dependent_service": "user-service",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:54:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_94604",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:55:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_b7785",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:56:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_b4efa",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:58:00Z",
+    "service_name": "database-service",
+    "error_message": "Connection pool exhausted - max 100 connections reached",
+    "environment": "production",
+    "request_id": "req_45879",
+    "metadata": {
+      "database": "postgres",
+      "pool_size": 100,
+      "active_connections": 105,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:59:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_43992",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:01:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_8678d",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:09:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_3e6be",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:10:00Z",
+    "service_name": "user-service",
+    "error_message": "Connection timeout: unable to reach database",
+    "environment": "production",
+    "request_id": "req_26ba0",
+    "metadata": {
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T19:25:00Z",
+    "service_name": "api-gateway",
+    "error_message": "DatabaseConnectionError: timeout after 5000ms",
+    "stack_trace": "at com.example.db.ConnectionPool.getConnection(ConnectionPool.java:78)\nat com.example.services.UserService.fetchUser(UserService.java:45)",
+    "environment": "production",
+    "request_id": "req_d0461",
+    "metadata": {
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  }
+]

@@ -1,0 +1,657 @@
+[
+  {
+    "timestamp": "2024-01-15T12:00:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_t1i2m3e4",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:01:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_t1i2m3e5",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:02:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_t1i2m3e6",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:15:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_8d68b",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:18:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_42a83",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:29:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_9524a",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:39:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_9b466",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:44:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_57ea1",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:53:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_32153",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:56:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_6238f",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:58:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_86219",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:00:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_aac0f",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:13:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_45a3d",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:19:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_d0dd3",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:28:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_d85fa",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:29:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_7c1b0",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:41:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_2e9bc",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:53:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_8aa77",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:54:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_5fe87",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:08:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_de05c",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:17:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_1a0e8",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:32:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_1b06f",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:34:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_5cb2b",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:48:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_de27d",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:54:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_adddc",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:09:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_8b76f",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:11:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_9e1d6",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:23:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_a397d",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:31:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_cc78f",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:40:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_b8eca",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:54:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_96830",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:04:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_92a90",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:10:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_52b62",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:23:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_62564",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:36:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_75414",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:51:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_b75f8",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:00:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_381f9",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:13:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_1f070",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:24:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_a645f",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:31:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_68f97",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:35:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_b79ae",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:44:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_ee50a",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:57:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_a8c1f",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:11:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_85dfe",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:13:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_58cd9",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:16:00Z",
+    "service_name": "reporting-service",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_60851",
+    "metadata": {
+      "report_rows": 100000,
+      "time_limit_seconds": 60,
+      "actual_time_seconds": 65,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:20:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_59892",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:21:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_83ea1",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:30:00Z",
+    "service_name": "api-gateway",
+    "error_message": "13 Disk Full Error",
+    "environment": "production",
+    "request_id": "req_96f71",
+    "metadata": {
+      "processing_time_ms": 31500,
+      "timeout_limit_ms": 30000,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T18:43:00Z",
+    "service_name": "search-service",
+    "error_message": "13 Disk Full Error",
+    "stack_trace": "at org.elasticsearch.action.search.SearchAction.performRequest(SearchAction.java:89)",
+    "environment": "production",
+    "request_id": "req_afdd8",
+    "metadata": {
+      "query_complexity": "high",
+      "index_size_gb": 500,
+      "timeout_ms": 5000,
+      "region": "us-east-1"
+    }
+  }
+]

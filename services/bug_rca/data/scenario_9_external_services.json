@@ -1,0 +1,617 @@
+[
+  {
+    "timestamp": "2024-01-15T10:15:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_5001",
+    "request_id": "req_e1x2t3e4",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:17:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_e1x2t3e5",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:19:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_e1x2t3e6",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:31:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_b18f8",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:32:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_a1e0d",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:34:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_de184",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:38:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_65589",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:40:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_3956",
+    "request_id": "req_412fd",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:54:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_f13c1",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T10:55:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_3fdb7",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:05:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_8ed4f",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:17:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_6009",
+    "request_id": "req_1cff1",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:26:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_6348",
+    "request_id": "req_f265d",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:30:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_6565",
+    "request_id": "req_8a454",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:32:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_c7d8e",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:36:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_9f8bf",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:44:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_2c9e6",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:55:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_3f1e1",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:08:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_20114",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:23:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_4299",
+    "request_id": "req_ea422",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:31:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_5069",
+    "request_id": "req_bc334",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:38:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_c6689",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:40:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_69afd",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:42:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_de0ef",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:52:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_3316",
+    "request_id": "req_52902",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:59:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_3f556",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:11:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_2687",
+    "request_id": "req_b6e2d",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:18:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_cb8fe",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:33:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_25788",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:43:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_5493",
+    "request_id": "req_6e570",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:44:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_816d8",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:46:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_59965",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:52:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_9883",
+    "request_id": "req_8c25e",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:02:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_3c20a",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:10:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_4e0ff",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:12:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_be78a",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:16:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_b1e7d",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:22:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_d4bd9",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:33:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_efb70",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:38:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_d96b5",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:50:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_4678",
+    "request_id": "req_c7d14",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:03:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_8505",
+    "request_id": "req_484e0",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:17:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_e8805",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:32:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_741c0",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:38:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_5e5f5",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:41:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_6129",
+    "request_id": "req_74e7a",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:45:00Z",
+    "service_name": "notification-service",
+    "error_message": "ConnectionRefused: couldn't connect to SMS gateway",
+    "environment": "production",
+    "request_id": "req_e5997",
+    "metadata": {
+      "gateway_endpoint": "sms.provider.com:5432",
+      "error_code": 111,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:57:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_8ec60",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:07:00Z",
+    "service_name": "email-service",
+    "error_message": "ServiceUnavailableException: failed to connect to mail server",
+    "environment": "production",
+    "request_id": "req_325ff",
+    "metadata": {
+      "service": "sendgrid",
+      "retry_count": 3,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:11:00Z",
+    "service_name": "payment-service",
+    "error_message": "PaymentGatewayException: external API unavailable",
+    "environment": "production",
+    "user_id": "user_2317",
+    "request_id": "req_e8c5e",
+    "metadata": {
+      "gateway": "stripe",
+      "status_code": 503,
+      "region": "us-east-1"
+    }
+  }
+]

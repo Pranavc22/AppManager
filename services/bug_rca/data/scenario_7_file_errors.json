@@ -1,0 +1,602 @@
+[
+  {
+    "timestamp": "2024-01-15T11:00:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_f1i2l3e4",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:02:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_f1i2l3e5",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:04:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_f1i2l3e6",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:09:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_4f018",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:12:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_bde25",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:20:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_19d46",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:35:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_7eafd",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:39:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_9c6bd",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:48:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_5555c",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:51:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_53aa2",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:53:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_de0f9",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T11:55:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_7374e",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:10:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_8cf6f",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:15:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_6512d",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:22:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_32ae8",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:25:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_af531",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:36:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_b62fb",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T12:51:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_ad2d1",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:04:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_c2f6a",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:11:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_f1d1c",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:23:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_3a285",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:31:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_be7da",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:36:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_b8f8e",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:41:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_879a3",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:46:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_3a300",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T13:51:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_9b926",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:04:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_2d07d",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:08:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_ec994",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:23:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_7b96d",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:38:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_6bb5f",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:44:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_be15b",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T14:47:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_43c6f",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:01:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_57206",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:08:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_bf60e",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:19:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_9a5d4",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:28:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_1c1ac",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:40:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_7934e",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:46:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_2db86",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T15:59:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_a167b",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:14:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_9ca92",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:17:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_afb3e",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:25:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_7fc27",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:29:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_6004e",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:32:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_7c325",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:43:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_7fa06",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:50:00Z",
+    "service_name": "file-service",
+    "error_message": "FileNotFoundException: config.json not found",
+    "stack_trace": "java.io.FileNotFoundException: /etc/app/config.json\nat com.example.config.ConfigLoader.load(ConfigLoader.java:45)",
+    "environment": "production",
+    "request_id": "req_65962",
+    "metadata": {
+      "file_path": "/etc/app/config.json",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T16:57:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_5dbc1",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:08:00Z",
+    "service_name": "migration-service",
+    "error_message": "IOException: permission denied writing to /var/data",
+    "environment": "production",
+    "request_id": "req_b83aa",
+    "metadata": {
+      "directory": "/var/data",
+      "required_permissions": "rwx",
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:13:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_550a2",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  },
+  {
+    "timestamp": "2024-01-15T17:15:00Z",
+    "service_name": "backup-service",
+    "error_message": "DiskFull: no space left on device",
+    "environment": "production",
+    "request_id": "req_42dff",
+    "metadata": {
+      "disk_usage_percent": 100,
+      "disk_usage_gb": 1024,
+      "region": "us-east-1"
+    }
+  }
+]
