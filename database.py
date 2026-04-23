@@ -41,7 +41,6 @@ def load_new_tables(engine):
             table_name = file.replace(".csv", "")
 
             if table_name in existing_tables:
-                print(f"Skipping existing table: {table_name}")
                 continue
 
             file_path = os.path.join(folder, file)
