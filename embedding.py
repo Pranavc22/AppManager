@@ -1,22 +1,52 @@
 import faiss
 import os
 import pickle
-from sentence_transformers import SentenceTransformer
+import numpy as np
 
+from fastembed import TextEmbedding
 from services.incident_triage.utils.query import get_closed_incidents
 
-# Paths for persistence
+# Paths
 FAISS_INDEX_PATH = "incidents_index.bin"
 MAPPING_PATH = "incidents_mapping.pkl"
 
-# Load model once
-model = SentenceTransformer("all-MiniLM-L6-v2")
+# Load lightweight model
+model = TextEmbedding()
 
 # Globals
 faiss_index = None
 id_mapping = []
 
+# In-memory cache
+embedding_cache = {}
 
+
+# Embedding function with cache
+def generate_embedding(text: str):
+    if text in embedding_cache:
+        return embedding_cache[text]
+
+    if len(embedding_cache) > 1000:
+        embedding_cache.clear()
+    
+    embedding = list(model.embed([text]))[0]
+    embedding = np.array(embedding, dtype="float32")
+
+    embedding_cache[text] = embedding
+    return embedding
+
+
+def generate_embeddings_batch(texts: list[str]) -> np.ndarray:
+    embeddings = []
+
+    for text in texts:
+        emb = generate_embedding(text)
+        embeddings.append(emb)
+
+    return np.vstack(embeddings)
+
+
+# Build FAISS index
 def build_incidents_faiss_index():
     global faiss_index, id_mapping
 
@@ -26,24 +56,24 @@ def build_incidents_faiss_index():
     id_mapping = []
 
     for inc in incidents:
-        text = f"{inc['short_description']} {inc['description']}"
+        text = f"{inc['short_description']}. {inc['description']}"
         texts.append(text)
         id_mapping.append(inc["number"])
 
     if not texts:
         raise ValueError("No resolved/closed incidents found for FAISS index")
 
-    embeddings = model.encode(texts, convert_to_numpy=True)
+    embeddings = generate_embeddings_batch(texts)
 
     dim = embeddings.shape[1]
 
-    # Cosine similarity via inner product
+    # Cosine similarity
     faiss.normalize_L2(embeddings)
     faiss_index = faiss.IndexFlatIP(dim)
 
     faiss_index.add(embeddings)
 
-    # Persist to disk
+    # Persist
     faiss.write_index(faiss_index, FAISS_INDEX_PATH)
 
     with open(MAPPING_PATH, "wb") as f:
@@ -51,6 +81,8 @@ def build_incidents_faiss_index():
 
     print(f"FAISS index built and saved with {len(id_mapping)} incidents")
 
+
+# Load FAISS index
 def load_incident_faiss_index():
     global faiss_index, id_mapping
 
@@ -64,15 +96,18 @@ def load_incident_faiss_index():
     with open(MAPPING_PATH, "rb") as f:
         id_mapping = pickle.load(f)
 
-    print(f"FAISS index loaded with {len(id_mapping)} incidents")
+    print(f"Pre-loaded FAISS index found with {len(id_mapping)} incidents")
 
+
+# Search similar incidents
 def search_similar_incidents(query_text: str, top_k: int = 5):
     global faiss_index, id_mapping
 
     if faiss_index is None:
         raise ValueError("FAISS index not initialized")
 
-    query_embedding = model.encode([query_text], convert_to_numpy=True)
+    query_embedding = generate_embedding(query_text).reshape(1, -1)
+
     faiss.normalize_L2(query_embedding)
 
     scores, indices = faiss_index.search(query_embedding, top_k)

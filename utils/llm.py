@@ -18,7 +18,7 @@ class LLMClient:
         api_key_env: str = "OPENROUTER_API_KEY",
         api_key: Optional[str] = None,
         endpoint: Optional[str] = None,
-        default_model: str = "openai/gpt-oss-20b:free", # IMP: USE FREE MODELS ONLY.
+        default_model: str = "openai/gpt-oss-20b:free",
     ):
         self.api_key = api_key or os.environ.get(api_key_env)
         if not self.api_key:
@@ -73,7 +73,9 @@ class LLMClient:
 
         fallback_models = [
             "openai/gpt-oss-20b:free",
-            "google/gemma-4-31b-it:free",
+            "google/gemma-4-26b-a4b-it:free",
+            "meta-llama/llama-3.3-70b-instruct:free",
+            "nvidia/nemotron-3-nano-30b-a3b:free"
             "openrouter/free"
         ]
 
@@ -97,13 +99,13 @@ class LLMClient:
 
             payload = {**payload_base, "model": model_name}
 
-            max_retries = 3
+            max_retries = 1
 
             for attempt in range(max_retries):
                 try:
                     resp = self.session.post(
                         self.endpoint,
-                        json=payload,   # ✅ better than data=
+                        json=payload,  
                         timeout=60
                     )
 
@@ -115,7 +117,7 @@ class LLMClient:
 
                     resp.raise_for_status()
                     data = resp.json()
-
+                    print(f"LLM Data: {data}")
                     if raw_response:
                         return data
 
@@ -130,7 +132,11 @@ class LLMClient:
                         msg = ch.get("message") or {}
                         contents.append(msg.get("content") or "")
 
-                    return "\n".join(contents).strip()
+                    final_response = "\n".join(contents).strip()
+
+                    if not final_response:
+                        raise RuntimeError(f"Empty response from model {model_name}")
+                    return final_response
 
                 except Exception as e:
                     last_error = e

@@ -1,7 +1,8 @@
 from fastapi import APIRouter, Depends
 
-from services.incident_triage.agents.incident_solver.main import _build_incident_context
-from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary
+from services.incident_triage.agents.incident_solver.main import IncidentAnalysisAgent
+from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary, SimilarIncident, IncidentAnalysisResponse
+from services.incident_triage.utils.context_builder import build_incident_context
 from services.incident_triage.utils.query import get_incidents
 
 router = APIRouter()
@@ -26,4 +27,22 @@ def get_incidents_by_status(status: str):
 
 @router.post("/analyze")
 def get_analysis(incident_id: str):
-    return _build_incident_context(incident_id)
+    agent = IncidentAnalysisAgent()
+    context = build_incident_context(incident_id=incident_id, top_k=3)
+    analysis = agent.analyze(context)
+    
+    # Form response
+    similar_incidents = [
+        SimilarIncident(
+            incident_id=inc["number"],
+            short_description=inc["short_description"],
+            description=inc.get("description", ""),
+            resolution=inc.get("resolution", "")
+        )
+        for inc in context["similar_incidents"]
+    ]
+
+    return IncidentAnalysisResponse(
+        **analysis,
+        similar_incidents=similar_incidents
+    )
