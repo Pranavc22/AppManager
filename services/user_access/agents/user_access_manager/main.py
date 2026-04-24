@@ -50,8 +50,9 @@ class DecisionAgent:
 
         try:
             return json.loads(response)
-        except Exception:
+        except Exception as e:
             # fallback
+            print(f"Exception in loading response: {e}")
             return {
                 "risk": "MEDIUM",
                 "impact": "Unable to determine impact",
