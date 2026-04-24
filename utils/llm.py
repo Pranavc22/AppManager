@@ -1,6 +1,7 @@
-import json
 import os
+import random
 import requests
+import time
 
 from dotenv import load_dotenv
 from typing import List, Optional, Union, Dict, Any
@@ -69,41 +70,81 @@ class LLMClient:
         extra_messages: Optional[List[Dict[str, Any]]] = None,
         raw_response: bool = False,
     ) -> Union[str, Dict[str, Any]]:
-        model_to_use = model or self.default_model
-        payload = {
-            "model": model_to_use,
+
+        fallback_models = [
+            "openai/gpt-oss-20b:free",
+            "google/gemma-4-31b-it:free",
+            "openrouter/free"
+        ]
+
+        # If user passed a model, try it first
+        models_to_try = [model] + fallback_models if model else fallback_models
+
+        payload_base = {
             "messages": self._build_messages(system, user, extra_messages),
             "temperature": float(temperature),
             "max_tokens": int(max_tokens),
         }
         if stop:
-            payload["stop"] = stop
+            payload_base["stop"] = stop
 
-        resp = self.session.post(self.endpoint, data=json.dumps(payload), timeout=60)
-        try:
-            resp.raise_for_status()
-        except requests.HTTPError as e:
-            raise RuntimeError(f"OpenRouter API error: {e}, response: {resp.text}")
+        last_error = None
 
-        data = resp.json()
-        if raw_response:
-            return data
+        for model_name in models_to_try:
+            print(f"Trying model: {model_name}")
+            if model_name is None:
+                continue
 
-        try:
-            choices = data.get("choices") or []
-            if not choices:
-                if "output" in data:
-                    return data["output"]
-                raise RuntimeError(f"Unexpected response shape: {data}")
+            payload = {**payload_base, "model": model_name}
 
-            contents = []
-            for ch in choices:
-                msg = ch.get("message") or {}
-                content = msg.get("content")
-                contents.append(content or "")
-            return "\n".join(contents).strip()
-        except Exception as e:
-            raise RuntimeError(f"Failed to parse OpenRouter response: {e}; raw: {data}")
+            max_retries = 3
+
+            for attempt in range(max_retries):
+                try:
+                    resp = self.session.post(
+                        self.endpoint,
+                        json=payload,   # ✅ better than data=
+                        timeout=60
+                    )
+
+                    if resp.status_code == 429:
+                        if attempt == max_retries - 1:
+                            raise RuntimeError(f"429 Rate limit (model={model_name})")
+                        time.sleep(0.5)
+                        continue
+
+                    resp.raise_for_status()
+                    data = resp.json()
+
+                    if raw_response:
+                        return data
+
+                    choices = data.get("choices") or []
+                    if not choices:
+                        if "output" in data:
+                            return data["output"]
+                        raise RuntimeError(f"Unexpected response shape: {data}")
+
+                    contents = []
+                    for ch in choices:
+                        msg = ch.get("message") or {}
+                        contents.append(msg.get("content") or "")
+
+                    return "\n".join(contents).strip()
+
+                except Exception as e:
+                    last_error = e
+
+                    # If last retry → break to next model
+                    if attempt == max_retries - 1:
+                        break
+
+                    time.sleep(0.5)
+
+            # Try next model if current failed
+            continue
+
+        raise RuntimeError(f"All models failed. Last error: {last_error}")
 
 # Helper
 def get_llm_client(**kwargs) -> LLMClient:
