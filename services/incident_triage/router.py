@@ -1,7 +1,9 @@
 from fastapi import APIRouter, Depends
 
+from services.incident_triage.agents.incident_solver.main import _build_incident_context
 from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary
 from services.incident_triage.utils.query import get_incidents
+
 router = APIRouter()
 
 @router.get("/")
@@ -21,3 +23,7 @@ def get_incidents_by_status(status: str):
         count=len(incidents),
         incidents=incidents
     )
+
+@router.post("/analyze")
+def get_analysis(incident_id: str):
+    return _build_incident_context(incident_id)
