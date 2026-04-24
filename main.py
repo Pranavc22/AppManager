@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from database import initialize_database
+from embedding import load_incident_faiss_index
 from services.bug_rca.router import router as bug_rca_router
 from services.incident_triage.router import router as incident_triage_router
 from services.user_access.router import router as user_access_router
@@ -14,6 +15,7 @@ app.include_router(user_access_router, prefix="/user-access", tags=["User Access
 @app.on_event("startup")
 def startup():
     initialize_database()
+    load_incident_faiss_index()
 
 @app.get("/")
 def read_root():
