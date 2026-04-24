@@ -35,7 +35,7 @@ def get_incidents(status: str):
     
     return rows
 
-def get_incidents_by_id(incident_id: str):
+def get_incident_by_id(incident_id: str):
     if not incident_id:
         return []
 
@@ -81,3 +81,19 @@ def get_incidents_by_ids(incident_ids: list[str]):
         rows = result.fetchall()
 
     return [row._mapping for row in rows]
+
+def update_incident_resolution(incident_id: str, resolution: str):
+    query = text("""
+        UPDATE incidents
+        SET 
+            Resolution = :resolution,
+            State = 'Resolved'
+        WHERE Number = :incident_id
+    """)
+
+    with engine.connect() as conn:
+        conn.execute(query, {
+            "incident_id": incident_id,
+            "resolution": resolution
+        })
+        conn.commit()
