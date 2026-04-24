@@ -12,7 +12,8 @@ engine = create_engine(
 
 # Multiple data folders (add more as needed)
 DATA_FOLDERS = [
-    "services/user_access/data"
+    "services/user_access/data",
+    "services/incident_triage/data"
 ]
 
 def get_existing_tables(engine):

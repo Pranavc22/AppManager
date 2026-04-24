@@ -1,0 +1,51 @@
+Affected User,Number,Short description,Description,Assigned To,State,Resolution
+Dr. Ananya Mehta,INC4001001,EDC data sync failure,Patient data not syncing from EDC to warehouse for Site IND-045.,Rahul Verma,In Progress,
+Rohit Sharma,INC4001002,LIMS barcode mismatch,Generated sample IDs not matching barcode labels.,Priya Nair,Resolved,Corrected barcode generation script and resynced sample batch.
+Dr. Kevin D’Souza,INC4001003,CTMS milestone load error,Milestones not visible due to backend service error.,Amit Kulkarni,Closed,Fixed null handling in milestone API and redeployed service.
+Sneha Iyer,INC4001004,SAE reporting delay,Adverse events not syncing to PV system.,Neha Gupta,In Progress,
+Dr. Li Wei,INC4001005,RNA-seq pipeline crash,Pipeline failing at alignment due to corrupted files.,Karan Malhotra,Resolved,Reprocessed FASTQ files and added validation step before pipeline execution.
+Arjun Patel,INC4001006,eCTD missing docs,Module 3 files missing in submission package.,Siddharth Jain,Open,
+Maria Gonzalez,INC4001007,ELN access denied,User unable to access ELN after role change.,Ankit Singh,Closed,Updated RBAC permissions and refreshed user session.
+Dr. Fatima Khan,INC4001008,Duplicate patient entries,Duplicate records in EDC from offline sync.,Ritika Sharma,Resolved,Implemented duplicate check logic and cleaned affected records.
+Nikhil Bansal,INC4001009,LIMS API failure,Integration API returning 500 error.,Vivek Reddy,In Progress,
+Dr. James Carter,INC4001010,Protocol logs missing,Deviation logs not reflecting in CTMS.,Megha Arora,Closed,Fixed data mapping issue between portal and CTMS database.
+Pooja Desai,INC4001011,Audit trail missing,GxP audit logs missing for updates.,Rohan Das,In Progress,
+Dr. Hiroshi Tanaka,INC4001012,DICOM upload timeout,Imaging files failing upload.,Aditya Menon,Open,
+Kavya Reddy,INC4001013,Unit conversion error,Lab results showing incorrect units.,Shubham Agarwal,Resolved,Corrected unit conversion logic and reprocessed affected reports.
+Dr. Elena Petrova,INC4001014,IWRS downtime,Randomization service unavailable.,Deepak Yadav,Closed,Restarted service and fixed memory leak in allocation module.
+Suresh Iyer,INC4001015,ETL latency issue,Clinical data pipeline delayed by 6 hours.,Manish Tiwari,In Progress,
+Dr. Rahul Singh,INC4001016,EDC form validation bug,Forms accepting invalid patient data.,Amit Sharma,Resolved,Updated validation rules and patched front-end form logic.
+Neha Kapoor,INC4001017,LIMS sample loss tracking,Missing samples in tracking dashboard.,Priya Nair,Open,
+Dr. Omar Ali,INC4001018,Genomics pipeline memory error,Pipeline crashes due to memory overflow.,Karan Malhotra,Resolved,Optimized memory allocation and scaled compute resources.
+Anjali Verma,INC4001019,CTMS login failure,Users unable to login intermittently.,Ankit Singh,In Progress,
+Dr. Chen Yu,INC4001020,Data warehouse schema mismatch,Mismatch between EDC and warehouse schema.,Rahul Verma,Resolved,Aligned schema and updated ETL mappings.
+Ritika Sharma,INC4001021,Duplicate SAE entries,Duplicate adverse events recorded.,Neha Gupta,Open,
+Dr. David Kim,INC4001022,Imaging metadata loss,Metadata missing from uploaded scans.,Aditya Menon,In Progress,
+Kunal Shah,INC4001023,Inventory sync issue,Reagent inventory not updating.,Vivek Reddy,Resolved,Fixed API token expiry issue and re-triggered sync job.
+Dr. Sofia Martinez,INC4001024,Protocol version mismatch,Sites using outdated protocol versions.,Megha Arora,Closed,Forced protocol refresh and updated version control logic.
+Amit Joshi,INC4001025,ELN slow performance,ELN taking >10 seconds to load.,Ankit Singh,In Progress,
+Dr. Rajesh Gupta,INC4001026,LIMS report generation failure,Reports failing for large datasets.,Priya Nair,Resolved,Optimized query and added pagination support.
+Sara Khan,INC4001027,PV system delay,Pharmacovigilance system lagging.,Neha Gupta,Open,
+Dr. Luca Rossi,INC4001028,Genomics pipeline incorrect output,Incorrect variant calling results.,Karan Malhotra,Resolved,Updated reference genome and corrected pipeline parameters.
+Vikram Desai,INC4001029,API authentication failure,Token validation failing intermittently.,Rahul Verma,Closed,Fixed token refresh logic and deployed patch.
+Dr. Emily Brown,INC4001030,EDC UI crash,UI crashes on patient form submission.,Amit Sharma,Resolved,Fixed frontend bug and added error handling.
+Ravi Mehta,INC4001031,ETL job failure,Nightly ETL job failing intermittently.,Manish Tiwari,In Progress,
+Dr. Noor Hassan,INC4001032,CTMS data inconsistency,Mismatch in patient counts across reports.,Megha Arora,Open,
+Priyanka Singh,INC4001033,LIMS audit log delay,Audit logs delayed by hours.,Rohan Das,Resolved,Optimized logging pipeline and reduced latency.
+Dr. Alex Turner,INC4001034,Imaging file corruption,Uploaded files corrupted.,Aditya Menon,In Progress,
+Harsh Patel,INC4001035,Inventory duplication,Duplicate reagent entries.,Vivek Reddy,Resolved,Added uniqueness constraint and cleaned duplicates.
+Dr. Mei Lin,INC4001036,EDC export failure,Data export to CSV failing.,Rahul Verma,Closed,Fixed export service and handled encoding issues.
+Nisha Gupta,INC4001037,ELN session timeout issue,Frequent session timeouts.,Ankit Singh,In Progress,
+Dr. John Smith,INC4001038,Pipeline scheduling delay,Jobs not triggering on time.,Karan Malhotra,Resolved,Fixed scheduler config and restarted cron service.
+Rohit Agarwal,INC4001039,API latency spike,High latency in integration APIs.,Rahul Verma,Open,
+Dr. Clara Fischer,INC4001040,Protocol approval delay,Approval workflow stuck.,Megha Arora,Resolved,Cleared workflow queue and fixed approval logic.
+Manoj Kumar,INC4001041,LIMS UI glitch,UI misalignment in dashboard.,Priya Nair,Closed,Fixed CSS issue and deployed UI patch.
+Dr. Ahmed Khan,INC4001042,Data duplication in warehouse,Duplicate records in warehouse.,Manish Tiwari,In Progress,
+Pallavi Joshi,INC4001043,PV reporting mismatch,Mismatch in PV reports.,Neha Gupta,Open,
+Dr. Sophie Dubois,INC4001044,Genomics pipeline timeout,Pipeline exceeding time limits.,Karan Malhotra,Resolved,Optimized pipeline steps and increased timeout threshold.
+Ankit Verma,INC4001045,Inventory API error,API returning incorrect stock levels.,Vivek Reddy,In Progress,
+Dr. Mark Lee,INC4001046,EDC sync partial failure,Partial data sync failures.,Rahul Verma,Resolved,Fixed batch processing logic and retried failed jobs.
+Kiran Reddy,INC4001047,ELN data save issue,Data not saving intermittently.,Ankit Singh,Open,
+Dr. Olga Ivanova,INC4001048,Imaging upload delay,Uploads taking too long.,Aditya Menon,In Progress,
+Sanjay Gupta,INC4001049,ETL schema drift,Schema drift causing failures.,Manish Tiwari,Resolved,Implemented schema validation and alerts.
+Dr. Peter Wilson,INC4001050,CTMS report error,Incorrect report generation.,Megha Arora,Closed,Fixed aggregation logic in reporting module.
