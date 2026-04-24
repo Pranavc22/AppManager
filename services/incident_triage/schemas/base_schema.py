@@ -23,3 +23,18 @@ class IncidentSummary(BaseModel):
 class IncidentListResponse(BaseModel):
     count: int
     incidents: List[IncidentSummary]
+
+
+class SimilarIncident(BaseModel):
+    incident_id: str
+    short_description: str
+    description: str
+    resolution: str
+
+class IncidentAnalysisResponse(BaseModel):
+    summary: str 
+    root_cause: str 
+    recommendation: str 
+    confidence: str 
+    estimated_effort: str
+    similar_incidents: List[SimilarIncident]

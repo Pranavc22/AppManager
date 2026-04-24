@@ -5,4 +5,4 @@ requests==2.33.1
 openrouter==0.9.1
 SQLAlchemy==2.0.49
 faiss-cpu==1.13.2
-sentence-transformers==5.4.1
+fastembed==0.8.0

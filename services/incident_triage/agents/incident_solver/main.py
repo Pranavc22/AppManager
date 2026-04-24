@@ -1,36 +1,64 @@
-from services.incident_triage.utils.query import get_incidents_by_id, get_incidents_by_ids
-from embedding import search_similar_incidents
+import json
+
+from services.incident_triage.agents.incident_solver.prompt import INCIDENT_ANALYSIS_SYSTEM
+from utils.llm import get_llm_client
 
 
-def _build_incident_context(incident_id: str, top_k: int = 5):
-    # Get current incident details
-    incident = get_incidents_by_id(incident_id)
-    if not incident:
-        raise ValueError(f"Incident {incident_id} not found")
-    # if incident['state'].lower() in ('closed', 'resolved'):
-    #     raise ValueError(f"Incident {incident_id} has already been closed/resolved.")
-    
-    # Embedding search 
-    query_text = f"{incident['short_description']} {incident['description']}"
-    similar = search_similar_incidents(query_text, top_k=top_k)
-    similar_ids = [item["incident_id"] for item in similar]
-    
-    # Historical incidents based on similarity scores
-    similar_details = get_incidents_by_ids(similar_ids)
-    score_map = {item["incident_id"]: item["similarity"] for item in similar}
-    enriched_similar = []
-    for inc in similar_details:
-        enriched_similar.append({
-            **inc,
-            "similarity": score_map.get(inc["number"], 0.0)
-        })
-    enriched_similar = sorted(
-        enriched_similar,
-        key=lambda x: x["similarity"],
-        reverse=True
-    )
+class IncidentAnalysisAgent:
+    def __init__(self):
+        self.client = get_llm_client()
 
-    return {
-        "incident": incident,
-        "similar_incidents": enriched_similar
-    }
+    def analyze(self, context: dict) -> dict:      
+        incident = context["incident"]
+        similar = context["similar_incidents"]
+
+        # Keep context compact
+        clean_context = {
+            "current_incident": {
+                "short_description": incident["short_description"],
+                "description": incident["description"]
+            },
+            "similar_incidents": [
+                {
+                    "short_description": inc["short_description"],
+                    "description": inc["description"],
+                    "resolution": inc.get("resolution", ""),
+                    "similarity": round(inc["similarity"], 2)
+                }
+                for inc in similar
+            ]
+        }
+
+        user_prompt = f"""
+        Analyze the following incident and provide structured output.
+
+        Context:
+        {json.dumps(clean_context, indent=2)}
+
+        Return JSON with:
+        {{
+        "summary": "...",
+        "root_cause": "...",
+        "recommendation": "...",
+        "confidence": "High | Medium | Low",
+        "estimated_effort": "Few hours | 1 day | Multiple days"
+        }}
+        """
+        try:
+            response = self.client.chat(
+                system=INCIDENT_ANALYSIS_SYSTEM,
+                user=user_prompt
+            )
+            print(f"LLM response: {response}")
+            # Safe JSON parsing
+            return json.loads(response)
+        
+        except Exception as e:
+            print(f"AI failed due to: {e}")
+            return {
+                "summary": "The incident could not be summarized.",
+                "root_cause": "The RCA could not be made.",
+                "recommendation": "The AI system could not come up with a recommendation",
+                "confidence": "Low",
+                "estimated_effort": "Unknown"
+            }

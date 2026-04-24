@@ -44,7 +44,6 @@ def get_incidents_by_id(incident_id: str):
             Number as number,
             "Short description" as short_description,
             Description as description,
-            Resolution as resolution,
             State as state
         FROM incidents
         WHERE Number = :id
@@ -60,7 +59,7 @@ def get_incidents_by_ids(incident_ids: list[str]):
     if not incident_ids:
         return []
 
-    # 🔥 Create dynamic placeholders
+    # Create dynamic placeholders
     placeholders = ", ".join([f":id{i}" for i in range(len(incident_ids))])
 
     query = text(f"""
@@ -74,7 +73,7 @@ def get_incidents_by_ids(incident_ids: list[str]):
         WHERE Number IN ({placeholders})
     """)
 
-    # 🔥 Build params dict
+    # Build params dict
     params = {f"id{i}": incident_ids[i] for i in range(len(incident_ids))}
 
     with engine.connect() as conn:
