@@ -22,8 +22,7 @@ class IncidentAnalysisAgent:
                 {
                     "short_description": inc["short_description"],
                     "description": inc["description"],
-                    "resolution": inc.get("resolution", ""),
-                    "similarity": round(inc["similarity"], 2)
+                    "resolution": inc.get("resolution", "")
                 }
                 for inc in similar
             ]

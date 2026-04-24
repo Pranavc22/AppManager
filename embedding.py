@@ -124,3 +124,32 @@ def search_similar_incidents(query_text: str, top_k: int = 5):
         })
 
     return results
+
+def add_incident_to_faiss(incident: dict):
+    global faiss_index, id_mapping
+
+    if faiss_index is None:
+        raise ValueError("FAISS index not initialized")
+
+    # Create text
+    text = f"{incident['short_description']}. {incident['description']}"
+
+    # Generate embedding
+    embedding = generate_embedding(text).reshape(1, -1)
+
+    # Normalize
+    faiss.normalize_L2(embedding)
+
+    # Add to index
+    faiss_index.add(embedding)
+
+    # Update mapping
+    id_mapping.append(incident["number"])
+
+    # Persist changes
+    faiss.write_index(faiss_index, FAISS_INDEX_PATH)
+
+    with open(MAPPING_PATH, "wb") as f:
+        pickle.dump(id_mapping, f)
+
+    print(f"Added incident {incident['number']} to FAISS index")

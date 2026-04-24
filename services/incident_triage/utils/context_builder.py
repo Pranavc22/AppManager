@@ -1,10 +1,10 @@
 from embedding import search_similar_incidents
-from services.incident_triage.utils.query import get_incidents_by_id, get_incidents_by_ids
+from services.incident_triage.utils.query import get_incident_by_id, get_incidents_by_ids
 
 
 def build_incident_context(incident_id: str, top_k: int = 5):
     # Get current incident details
-    incident = get_incidents_by_id(incident_id)
+    incident = get_incident_by_id(incident_id)
     if not incident:
         raise ValueError(f"Incident {incident_id} not found")
     

@@ -1,9 +1,10 @@
 from fastapi import APIRouter, Depends
 
+from embedding import add_incident_to_faiss
 from services.incident_triage.agents.incident_solver.main import IncidentAnalysisAgent
-from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary, SimilarIncident, IncidentAnalysisResponse
+from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary, SimilarIncident, IncidentAnalysisResponse, IncidentResolveRequest
 from services.incident_triage.utils.context_builder import build_incident_context
-from services.incident_triage.utils.query import get_incidents
+from services.incident_triage.utils.query import get_incidents, update_incident_resolution, get_incident_by_id
 
 router = APIRouter()
 
@@ -46,3 +47,26 @@ def get_analysis(incident_id: str):
         **analysis,
         similar_incidents=similar_incidents
     )
+
+@router.post("/resolve")
+def resolve_incident(request: IncidentResolveRequest):
+
+    # Update DB
+    update_incident_resolution(
+        request.incident_id,
+        request.resolution
+    )
+
+    # Fetch updated record
+    incident = get_incident_by_id(request.incident_id)
+
+    if not incident:
+        raise ValueError("Incident not found")
+
+    # Add to FAISS
+    add_incident_to_faiss(incident)
+
+    return {
+        "message": "Incident resolved and indexed successfully",
+        "incident_id": request.incident_id
+    }

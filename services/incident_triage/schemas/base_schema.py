@@ -38,3 +38,8 @@ class IncidentAnalysisResponse(BaseModel):
     confidence: str 
     estimated_effort: str
     similar_incidents: List[SimilarIncident]
+
+
+class IncidentResolveRequest(BaseModel):
+    incident_id: str
+    resolution: str
