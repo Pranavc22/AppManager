@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from database import initialize_database
 from embedding import load_incident_faiss_index
@@ -7,6 +8,14 @@ from services.incident_triage.router import router as incident_triage_router
 from services.user_access.router import router as user_access_router
 
 app = FastAPI(title="App Manager", description="A system that helps manage applications.", version="1.0.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(bug_rca_router, prefix="/bug-rca", tags=["Bug Report/Logs Summary + RCA"])
 app.include_router(incident_triage_router, prefix="/incident-triage", tags=["Intelligent Incident Triage"])
