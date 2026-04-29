@@ -1,3 +1,5 @@
+import os
+import csv
 from database import engine
 from sqlalchemy import text
 
@@ -97,3 +99,28 @@ def update_incident_resolution(incident_id: str, resolution: str):
             "resolution": resolution
         })
         conn.commit()
+
+def get_latest_incident_number():
+    query = text("""
+        SELECT Number FROM incidents
+        WHERE Number LIKE 'INC%'
+        ORDER BY Number DESC LIMIT 1
+    """)
+    with engine.connect() as conn:
+        result = conn.execute(query)
+        row = result.fetchone()
+        return row[0] if row else "INC4001000"
+
+def create_incident(incident_data: dict):
+    csv_path = os.path.join("services", "incident_triage", "data", "incidents.csv")
+    with open(csv_path, mode='a', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            incident_data.get("affected_user", ""),
+            incident_data.get("number", ""),
+            incident_data.get("short_description", ""),
+            incident_data.get("description", ""),
+            incident_data.get("assigned_to", ""),
+            incident_data.get("state", ""),
+            incident_data.get("resolution", "")
+        ])

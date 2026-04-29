@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends
 
 from embedding import add_incident_to_faiss
 from services.incident_triage.agents.incident_solver.main import IncidentAnalysisAgent
-from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary, SimilarIncident, IncidentAnalysisResponse, IncidentResolveRequest
+from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary, SimilarIncident, IncidentAnalysisResponse, IncidentResolveRequest, IncidentCreateRequest
 from services.incident_triage.utils.context_builder import build_incident_context
-from services.incident_triage.utils.query import get_incidents, update_incident_resolution, get_incident_by_id
+from services.incident_triage.utils.query import get_incidents, update_incident_resolution, get_incident_by_id, create_incident, get_latest_incident_number
 
 router = APIRouter()
 
@@ -69,4 +69,28 @@ def resolve_incident(request: IncidentResolveRequest):
     return {
         "message": "Incident resolved and indexed successfully",
         "incident_id": request.incident_id
+    }
+
+@router.post("/create-incident")
+def create_new_incident(request: IncidentCreateRequest):
+    latest_number = get_latest_incident_number()
+    prefix = latest_number[:3]
+    num_str = latest_number[3:]
+    new_number = f"{prefix}{int(num_str) + 1}"
+
+    incident_data = {
+        "affected_user": request.affected_user,
+        "number": new_number,
+        "short_description": request.short_description,
+        "description": request.description,
+        "assigned_to": request.assigned_to,
+        "state": "Open",
+        "resolution": request.resolution
+    }
+    
+    create_incident(incident_data)
+
+    return {
+        "message": "Incident created successfully",
+        "incident_id": new_number
     }
