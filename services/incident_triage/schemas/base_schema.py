@@ -1,5 +1,5 @@
 from pydantic import BaseModel, field_validator
-from typing import List
+from typing import List, Optional
 
 class IncidentStatus(BaseModel):
     status: str
@@ -43,3 +43,12 @@ class IncidentAnalysisResponse(BaseModel):
 class IncidentResolveRequest(BaseModel):
     incident_id: str
     resolution: str
+
+class IncidentCreateRequest(BaseModel):
+    affected_user: str
+    number: Optional[str] = None
+    short_description: str
+    description: str
+    assigned_to: str
+    state: Optional[str] = "Open"
+    resolution: str = ""
