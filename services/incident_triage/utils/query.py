@@ -97,3 +97,50 @@ def update_incident_resolution(incident_id: str, resolution: str):
             "resolution": resolution
         })
         conn.commit()
+
+
+def _generate_next_incident_number(conn):
+    query = text("""
+        SELECT COALESCE(MAX(CAST(SUBSTR(Number, 4) AS INTEGER)), 4001000) AS max_num
+        FROM incidents
+        WHERE Number LIKE 'INC%'
+    """)
+    row = conn.execute(query).fetchone()
+    return f"INC{int(row[0]) + 1}"
+
+
+def create_incident(number: str, short_description: str, assigned_to: str, state: str):
+    insert_query = text("""
+        INSERT INTO incidents (
+            "Affected User",
+            Number,
+            "Short description",
+            Description,
+            "Assigned To",
+            State,
+            Resolution
+        )
+        VALUES (
+            :affected_user,
+            :number,
+            :short_description,
+            :description,
+            :assigned_to,
+            :state,
+            :resolution
+        )
+    """)
+
+    with engine.connect() as conn:
+        conn.execute(insert_query, {
+            "affected_user": "",
+            "number": number,
+            "short_description": short_description,
+            "description": "",
+            "assigned_to": assigned_to,
+            "state": state,
+            "resolution": "",
+        })
+        conn.commit()
+
+    return number

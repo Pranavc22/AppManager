@@ -1,10 +1,10 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 
 from embedding import add_incident_to_faiss
 from services.incident_triage.agents.incident_solver.main import IncidentAnalysisAgent
-from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary, SimilarIncident, IncidentAnalysisResponse, IncidentResolveRequest
+from services.incident_triage.schemas.base_schema import IncidentStatus, IncidentListResponse, IncidentSummary, SimilarIncident, IncidentAnalysisResponse, IncidentResolveRequest, IncidentCreateRequest, IncidentCreateResponse
 from services.incident_triage.utils.context_builder import build_incident_context
-from services.incident_triage.utils.query import get_incidents, update_incident_resolution, get_incident_by_id
+from services.incident_triage.utils.query import get_incidents, update_incident_resolution, get_incident_by_id, create_incident
 
 router = APIRouter()
 
@@ -70,3 +70,21 @@ def resolve_incident(request: IncidentResolveRequest):
         "message": "Incident resolved and indexed successfully",
         "incident_id": request.incident_id
     }
+
+
+@router.post("/create-incident", response_model=IncidentCreateResponse)
+def create_new_incident(request: IncidentCreateRequest):
+    try:
+        created_incident_number = create_incident(
+            number=request.number,
+            short_description=request.short_description,
+            assigned_to=request.assigned_to,
+            state=request.state,
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Failed to create incident: {str(exc)}")
+
+    return IncidentCreateResponse(
+        number=created_incident_number,
+        message="Incident created successfully",
+    )

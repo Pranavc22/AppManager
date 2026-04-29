@@ -43,3 +43,23 @@ class IncidentAnalysisResponse(BaseModel):
 class IncidentResolveRequest(BaseModel):
     incident_id: str
     resolution: str
+
+
+class IncidentCreateRequest(BaseModel):
+    number: str
+    short_description: str
+    assigned_to: str
+    state: str
+
+    @field_validator("state")
+    def validate_state(cls, value):
+        allowed = {"in progress", "open", "closed", "resolved"}
+        value_lower = value.lower()
+        if value_lower not in allowed:
+            raise ValueError(f"State must be one of {allowed}")
+        return value.title() if value_lower != "in progress" else "In Progress"
+
+
+class IncidentCreateResponse(BaseModel):
+    number: str
+    message: str
